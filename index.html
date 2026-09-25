@@ -597,7 +597,7 @@
                 </a> -->
 
                 <!-- Donate 2-->
-                <a class="link-card" href="https://hiwdo.com/dewdabid" target="_blank" rel="noopener">
+                <a class="link-card" href="https://donate.misterdew.com/" target="_blank" rel="noopener">
                     <div class="card-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -611,7 +611,7 @@
                     </div>
                     <div class="card-text">
                         <div class="card-title">Donate </div>
-                        <div class="card-sub">Donation · เเบบมีใส่ภาพ</div>
+                        <div class="card-sub">ต่อชีวิตให้พรี่ดิวมีวันพรุ่งนี้</div>
                     </div>
                     <div class="card-more">⋮</div>
                 </a>
@@ -728,7 +728,7 @@
                     const lockAt = progress * this.totalDuration * 0.9 + Math.random() * this.totalDuration * 0.1;
                     const scrambleFor = 350 + Math.random() * 500;
                     const startAt = Math.max(0, lockAt - scrambleFor);
-                    this.queue.push({ from, to, start: startAt, end: lockAt, char: '' });
+                    this.queue.push({from, to, start: startAt, end: lockAt, char: ''});
                 }
                 this.startTime = null;
                 cancelAnimationFrame(this.frameRequest);
@@ -741,7 +741,7 @@
                 let output = '';
                 let complete = 0;
                 for (let i = 0, n = this.queue.length; i < n; i++) {
-                    let { from, to, start, end, char } = this.queue[i];
+                    let {from, to, start, end, char} = this.queue[i];
                     if (elapsed >= end) {
                         complete++;
                         output += to;
